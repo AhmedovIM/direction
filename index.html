@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script>
+    let tg = window.Telegram.WebApp;
+    tg.expand(); // Разворачивает мини-приложение на весь экран
+
+    document.addEventListener("DOMContentLoaded", () => {
+          document.body.style.background = tg.themeParams.bg_color || "#ffffff"; // Учитываем тему Telegram
+    });
+        
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список таблиц</title>
