@@ -1,17 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-    let tg = window.Telegram.WebApp;
-    tg.expand(); // Разворачивает мини-приложение на весь экран
-
-    document.addEventListener("DOMContentLoaded", () => {
-          document.body.style.background = tg.themeParams.bg_color || "#ffffff"; // Учитываем тему Telegram
-    });
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Список таблиц</title>
@@ -19,101 +8,40 @@
 </head>
 <body>
     <div class="container">
-        <h1>Выберите группу</h1>
+        <h1>Выберите Направление</h1>
 
         <div class="group">
-            <h2 class="group-title">1.УК Холдинг</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1WebiTCceAy9CsU-4fB_yXPhJJEDbFZVF7VkgC1iKJno/edit?gid=273890215#gid=273890215" target="_blank">Реестр УК Холдинг</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1Zk4k7N_2esZgiSz_QQwLiRE7j2oAViHLdjoXmpd140U/edit" target="_blank">Остатки З/Т</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="group">
-            <h2 class="group-title">2.РОГ УК</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1s6tLeyihTp9xS5yI_B-J5NWOFDC3x2QB6Xc-nr60bwc/edit" target="_blank">Реестр заявок Рамина</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/14ewW07RpqY2XnDhupx5s68plsjDoJG21StK-LTz9it4/edit" target="_blank">Остатки для Рамина</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1-YHy3AJdqD2Tvr7s4CXlmj-K4LP8P7FZIqHIsO7hLa0/edit" target="_blank">Остатки К</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1p3nBYzZchafpGajTgetmbwE6DnLpWU73VxUPIH7xW_Q/edit" target="_blank">Остатки Ф</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="group">
-            <h2 class="group-title">3.Эстейт</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1s6tLeyihTp9xS5yI_B-J5NWOFDC3x2QB6Xc-nr60bwc/edit" target="_blank">Реестр заявок Эстейт</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1Bo5a3peBzCVx5N_L4Rvs4LN56dIFrxz2HRakT5NHXcQ/edit" target="_blank">Остатки для Эстейт</a></li>
-                </ul>
-            </div>
+            <a class="group-title" href="group1.html">1. УК Холдинг</a>
         </div>
 
         <div class="group">
-            <h2 class="group-title">5.СМР РД</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1hyMbwtrgpdnylDfXIU6mU8NJue4dPzDSLDzH1AhNI4U/edit" target="_blank">Реестр заявок СМР РД</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1dAVM0kQH2o3Fx0tkTSbULwISiLqoUkN4iOid66grZA0/edit" target="_blank">Остатки для СМР РД</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1LTqFLNsDrHnitFSau1UWUQdZJIRFe42bLcjoQmXr_g0/edit" target="_blank">Журнал Снабжения</a></li>
-                </ul>
-            </div>
-        </div>
-        
-        <div class="group">
-            <h2 class="group-title">6.ПИР</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/15_JrlYZlB2IZh0T3d7ygv3sE9U4YU-XnImJ7Z5oeJVA/edit" target="_blank">Реестр заявок ПИР</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1Gfa47XSmkTynv7KERo-V_1E_Hh_88vFJGE_ZSv7SpVo/edit" target="_blank">Остатки для Пир</a></li>  
-                </ul>
-            </div>
+            <a class="group-title" href="group2.html">2. РОГ УК</a>
         </div>
 
         <div class="group">
-            <h2 class="group-title">8.Общепит УК</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1jYMZMAFZJiB-DBASQ0AqiNmLyttnmct6Qk2utdg2SII/edit" target="_blank">Реестр заявок Общепит</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/12Giw0CZRLdTAOix-YfLPJkaSyxZm72rW/edit" target="_blank">Отчет службы питания по выручке</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1GUXY1pP7UpvdksRtKOjxqlFpT8yUwZlAUhdHfjCy0gE/edit" target="_blank">Остатки для Общепит</a></li>  
-                    <li><a href="https://docs.google.com/spreadsheets/d/1TSmXghdiguAnMEgexjppqITUZiZKiKvEtSeIPxUS2Tc/edit" target="_blank">Запрос Инициатор Анастасия Реестр УК</a></li>  
-                    <li><a href="https://docs.google.com/spreadsheets/d/1GUXY1pP7UpvdksRtKOjxqlFpT8yUwZlAUhdHfjCy0gE/edit?gid=0#gid=0" target="_blank">Остатки Р</a></li>  
-                </ul>
-            </div>
+            <a class="group-title" href="group3.html">3. Эстейт</a>
         </div>
 
         <div class="group">
-            <h2 class="group-title">9.Экотар</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1KEWPeYskS4keLocYCILYT-eN4cqpe--V7a-lmgi1aXA/edit" target="_blank">Реестр заявок Экотар</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1iq0Vfo7wQ9JvmFt2IBlZIIXI413r7zuR-poCdQ69Fj0/edit" target="_blank">Остатки для Экотар</a></li>  
-                    <li><a href="https://docs.google.com/spreadsheets/d/1TJs4tsllI1TfqzS2ZtUEDqxkTujwBbZsK_ZtAeAybVE/edit" target="_blank">Остатки М</a></li>  
-                    <li><a href="https://docs.google.com/spreadsheets/d/11K88KmJNJU4SlrLzSnHyjvfrwSeTXz82l4WXZsrBDGE/edit" target="_blank">РНП 2024 23 дек</a></li>  
-                </ul>
-            </div>
-        </div>
-        
-        <div class="group">
-            <h2 class="group-title">Прочее</h2>
-            <div class="subgroup">
-                <ul>
-                    <li><a href="https://docs.google.com/spreadsheets/d/1SntSRizLr2N93IkrV-juVzTDAIX_iBe2nRLbF36u7lk/edit" target="_blank">Справочник</a></li>
-                    <li><a href="https://docs.google.com/spreadsheets/d/14ewW07RpqY2XnDhupx5s68plsjDoJG21StK-LTz9it4/edit" target="_blank">Сведения о правах пользователей на таблицы</a></li>  
-                    <li><a href="https://docs.google.com/spreadsheets/d/1hS1XYda_Sxo3vM2Hbo0k9d1h4OHiiG64_e37s-BAIBQ/edit?sharingaction=ownershiptransfer&gid=0#gid=0" target="_blank">Банки</a></li>
-                </ul>
-            </div>
+            <a class="group-title" href="group4.html">4. СМР РД</a>
         </div>
 
-    
+        <div class="group">
+            <a class="group-title" href="group6.html">6. ПИР</a>
+        </div>
+
+        <div class="group">
+            <a class="group-title" href="group8.html">8. Общепит УК</a>
+        </div>
+
+        <div class="group">
+            <a class="group-title" href="group9.html">9. Экотар</a>
+        </div>
+
+        <div class="group">
+            <a class="group-title" href="group0.html">Прочее</a>
+        </div>
+
     </div>
-
-        
-    <script src="script.js"></script>
 </body>
 </html>
