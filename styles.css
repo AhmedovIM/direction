@@ -20,38 +20,30 @@ h1 {
     color: white; /* Белый заголовок */
 }
 
-.group {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 6px;
-    background-color: white; /* Белый фон групп */
-    cursor: pointer;
-}
-
-.group-title {
-    margin: 0;
-    color: #000000; 
-}
-
-.subgroup {
-    display: none;
-    padding-top: 10px;
-}
-
 ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 li {
-    margin: 5px 0;
+    margin: 10px 0;
 }
 
+/* Оформление ссылок как кнопок */
 a {
+    display: block;
+    background-color: white; /* Белый фон кнопки */
+    color: black; /* Черный текст */
+    padding: 15px;
+    border-radius: 6px;
     text-decoration: none;
-    color: #ffffff; /* черный цвет ссылок */
+    font-size: 18px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
 }
 
 a:hover {
-    text-decoration: underline;
+    background-color: #e0e0e0; /* Светло-серый при наведении */
+    transform: scale(1.05);
 }
